@@ -28,7 +28,6 @@
   width: 150px;
   margin-left: 12px;
   animation: glow 1s ease-in-out infinite alternate;
-  
 }
 
 .button {
@@ -68,4 +67,33 @@
 .link:hover{
   background-color: #1A1F38;
   color: white;
+}
+
+
+@media only screen and (max-width: 580px) {
+.timer{
+    margin-top: 50%;
+    font-size: 220%;
+}
+
+.timer_text{
+  width: 90px;
+  margin-left: 12px;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.button {
+   /* Green */
+  width: 120px;
+  padding: 10px 15px;
+  font-size: 15px;
+  margin: 4px 10px;
+}
+
+.link{
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+
 }
