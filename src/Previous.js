@@ -15,6 +15,10 @@ class Previous extends React.Component {
                         let seconds = Math.floor(time/1000 - (minutes * 60));
                         let milli = Math.floor(time - (seconds * 1000) - (minutes * 60000))/10;
 
+                        milli = milli.toLocaleString('en-US', {minimumIntegerDigits: 2,useGrouping: false})
+                        seconds = seconds.toLocaleString('en-US', {minimumIntegerDigits: 2,useGrouping: false})
+                        minutes = minutes.toLocaleString('en-US', {minimumIntegerDigits: 2,useGrouping: false})
+
                         return(
                                 <p>{minutes}:{seconds}:{milli}</p>
                         );
