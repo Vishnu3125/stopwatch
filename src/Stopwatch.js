@@ -120,8 +120,8 @@ class Stopwatch extends Component {
         </p>
 
         {/* calling all the buttons start stop and reset */}
-        <button onClick={this.handleClickStart} className = "button">{this.state.start}</button>
-        <button onClick={this.handleClickStop} className = "button">Stop</button>
+        <button onMouseDown={this.handleClickStart} className = "button">{this.state.start}</button>
+        <button onMouseDown={this.handleClickStop} className = "button">Stop</button>
         <button onClick={this.handleClickReset} className = "button">Reset</button>
         </div>
       )
