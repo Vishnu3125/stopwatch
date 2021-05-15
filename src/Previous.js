@@ -4,9 +4,13 @@ import Navigator from './Navigator';
 class Previous extends React.Component {
         render(){
                 let time = sessionStorage.getItem("Value");
-                let time_arr = time.split(',');
+                let time_arr = []
+                if (time !== null) {
+                        time_arr = time.split(',');
+                }
+                
 
-                let ret = time_arr.map(time => {
+                        let ret = time_arr.map(time => {
                         let minutes = Math.floor(time/60000);
                         let seconds = Math.floor(time/1000 - (minutes * 60));
                         let milli = Math.floor(time - (seconds * 1000) - (minutes * 60000))/10;

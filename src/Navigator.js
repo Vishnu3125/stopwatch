@@ -7,12 +7,16 @@ class Navigator extends React.Component {
 
         return(
             <div>
-            <Link to="/Stopwatch">
-            Stopwatch
-            </Link>
-            <Link to="/Previous">
-            Previous
-            </Link>
+                <div style= {{margin: "20px 30px"}}>
+                    <Link to="/Stopwatch">
+                    Stopwatch
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/Previous">
+                    Previous
+                    </Link>
+                </div>
             </div>
         )
     }

@@ -6,6 +6,7 @@ let stop_timer = true;
 let time = 0;
 let minutes, seconds, milli = 0;
 let time_flags = [];
+let time_reset_flag = []
 let interval;
 
 
@@ -79,7 +80,8 @@ class Stopwatch extends Component {
     }
 
     handleClickReset(){
-        stop_timer = true;
+      time_flags = time_reset_flag;
+      stop_timer = true;
       time = 0
       this.setState({
         second : "00",
