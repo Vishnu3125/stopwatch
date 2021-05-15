@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigator from './Navigator';
+import { Link } from "react-router-dom";
 
 class Previous extends React.Component {
         render(){
@@ -22,8 +22,10 @@ class Previous extends React.Component {
         
                 return(
                         <div>
-                                <Navigator></Navigator>
-                                <p>{ret}</p>
+                                <Link to="/Stopwatch" className="link">
+                                Stopwatch
+                                </Link>
+                                <p className="timer-history">{ret}</p>
                         </div>
                         
                          

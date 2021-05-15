@@ -1,12 +1,14 @@
 import './App.css';
 import React, {Component} from 'react';
-import Navigator from './Navigator';
+import { Link } from "react-router-dom";
 
 let stop_timer = true;
 let time = 0;
-let minutes, seconds, milli = 0;
+let minutes = "00";
+let seconds = "00";
+let milli = "00";
 let time_flags = [];
-let time_reset_flag = []
+let time_reset_flag = [];
 let interval;
 
 
@@ -15,9 +17,9 @@ class Stopwatch extends Component {
     constructor() {
       super()
         this.state = {
-          hour: "00",
-          minute: "00",
-          second: "00",
+          hour: minutes,
+          minute: seconds,
+          second: milli,
           start: "Start"
         }
         this.handleClickStart = this.handleClickStart.bind(this);
@@ -83,6 +85,9 @@ class Stopwatch extends Component {
       time_flags = time_reset_flag;
       stop_timer = true;
       time = 0
+      minutes = "00";
+      seconds = "00";
+      milli = "00";
       this.setState({
         second : "00",
         minute : "00",
@@ -95,15 +100,18 @@ class Stopwatch extends Component {
     
       return (
         <div className = "App">
-        <Navigator></Navigator>
-        <p> 
-            <div style = {{display : "inline"}}>{this.state.hour}</div>:
-            <div style = {{display : "inline"}}>{this.state.minute}</div>:
-            <div style = {{display : "inline"}}>{this.state.second}</div>  
+        <Link to="/Previous" className="link">
+        View History
+        </Link>
+
+        <p className = "timer" > 
+            <div className="timer_text">{this.state.hour}</div>:
+            <div className="timer_text">{this.state.minute}</div>:
+            <div className="timer_text">{this.state.second}</div>  
         </p> 
-        <button onClick={this.handleClickStart} style = {{}}>{this.state.start}</button>
-        <button onClick={this.handleClickStop} style = {{}}>Stop!</button>
-        <button onClick={this.handleClickReset} style = {{}}>Reset!</button>
+        <button onClick={this.handleClickStart} className = "button">{this.state.start}</button>
+        <button onClick={this.handleClickStop} className = "button">Stop</button>
+        <button onClick={this.handleClickReset} className = "button">Reset</button>
         </div>
       )
     }

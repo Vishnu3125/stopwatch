@@ -4,37 +4,66 @@
   display: ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'digital';
+  src: url('./DS-DIGI.TTF');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.timer{
+  color: #ECD504;
+  font-family : digital;
+  font-size: 350%;
+  text-shadow: 1 1 10px #ECD504
+}
+
+.timer-history{
+  color: #ECD504;
+  font-family : digital;
+  font-size: 150%;
+  text-shadow: 1 1 10px #ECD504
+}
+
+.timer_text{
+  display : inline-flex;
+  width: 150px;
+  margin-left: 12px;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+}
+
+.button {
+    background-color: #1A1F38; /* Green */
+    width: 150px;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    border: 2px solid #ECD504;
   }
+
+.button:hover {
+    background-color: #ECD504;
+    color: Black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.link{
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #ECD504;
+  color: Black;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  border: 1px solid #ECD504;
+  padding: 5px 10px;
+}
+
+.link:hover{
+  background-color: #1A1F38;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
