@@ -1,0 +1,37 @@
+.convert-input{
+    width: 180px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 0px 10px;
+    background-color: #1A1F38;
+    border:3px solid #ec041b;
+    color: white;
+}
+
+.convert-input:focus{
+    outline: none;
+}
+
+.convert-text{
+    width: 10rem;
+    height: 35px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 1% 10px 1%;
+    background-color: #1A1F38;
+    border:3px solid #ec041b;
+    color: white;
+}
+
+.convert-text:focus{
+    outline: none;
+}

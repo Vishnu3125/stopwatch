@@ -18,13 +18,23 @@ class Navigator extends React.Component {
         return(
             <div style={Header}>
                 <div style= {Links}>
-                    <Link to="/Stopwatch" className="link">
+                    <Link to="/Stopwatch" className="link yellow-link" style={{width: "200px"}}>
                     Stopwatch
                     </Link>
                 </div>
                 <div style= {Links}>
-                    <Link to="/History" className="link">
-                    View History
+                    <Link to="/Clock" className="link green-link">
+                    Clock
+                    </Link>
+                </div>
+                <div style= {Links}>
+                    <Link to="/Calculator" className="link orange-link">
+                    Calculator
+                    </Link>
+                </div>
+                <div style= {Links}>
+                    <Link to="/Convert" className="link red-link">
+                    Converter
                     </Link>
                 </div>
             </div>

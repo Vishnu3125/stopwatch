@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'digital';
+    src: url('../../DS-DIGI.TTF');
+  }
+  
+  .timer{
+    color: #ECD504;
+    font-family : digital;
+    font-size: 350%;
+    margin: 7% 0;
+    text-shadow: 1 1 10px #ECD504
+    
+  }
+  
+  .timer-history{
+    color: #ECD504;
+    font-family : digital;
+    font-size: 150%;
+    text-shadow: 1 1 10px #ECD504
+  }
+  
+  .timer_text{
+    display : inline-flex;
+    width: 150px;
+    margin-left: 12px;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  .timer-button {
+      background-color: #1A1F38; /* Green */
+      width: 150px;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 26px;
+      margin: 4px 10px;
+      transition-duration: 0.4s;
+      cursor: pointer; 
+      border: 2px solid #ECD504;
+      border-radius: 25px;
+    }
+  
+  .timer-button:hover {
+      background-color: #ECD504;
+      color: Black;
+  }
+  
+  
+  @media only screen and (max-width: 580px) {
+  .timer{
+      margin-top: 50%;
+      font-size: 220%;
+  }
+  
+  .timer_text{
+    width: 90px;
+    margin-left: 12px;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  .timer-button {
+     /* Green */
+    width: 120px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 4px 10px;
+  }
+}

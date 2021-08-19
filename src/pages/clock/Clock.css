@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'digital';
+    src: url('../../DS-DIGI.TTF');
+  }
+  
+  .clock{
+    margin-top: 12%;
+    color: #8fec04;
+    font-family : digital;
+    font-size: 350%;
+    text-shadow: 1 1 10px #8fec04;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  

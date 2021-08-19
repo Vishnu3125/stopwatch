@@ -6,62 +6,12 @@
   display: ;
 }
 
-@font-face {
-  font-family: 'digital';
-  src: url('./DS-DIGI.TTF');
-}
-
-.timer{
-  color: #ECD504;
-  font-family : digital;
-  font-size: 350%;
-  text-shadow: 1 1 10px #ECD504
-}
-
-.timer-history{
-  color: #ECD504;
-  font-family : digital;
-  font-size: 150%;
-  text-shadow: 1 1 10px #ECD504
-}
-
-.timer_text{
-  display : inline-flex;
-  width: 150px;
-  margin-left: 12px;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-.button {
-    background-color: #1A1F38; /* Green */
-    width: 150px;
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 26px;
-    margin: 4px 10px;
-    transition-duration: 0.4s;
-    cursor: pointer; 
-    border: 2px solid #ECD504;
-    border-radius: 25px;
-  }
-
-.button:hover {
-    background-color: #ECD504;
-    color: Black;
-}
-
 .link{
   font-size: 25px;
   font-weight: 500;
-  background-color: #ECD504;
   color: Black;
   text-decoration: none;
   transition-duration: 0.4s;
-  border: 1px solid #ECD504;
   padding: 5px 10px;
   border-radius: 25px;
 }
@@ -71,31 +21,29 @@
   color: white;
 }
 
+.green-link{
+  background-color: #8fec04;
+  border:1px solid #8fec04;
+}
+
+.yellow-link{
+  background-color: #ECD504;
+  border: 1px solid #ECD504;
+}
+
+.orange-link{
+  background-color: #ec6104;
+  border: 1px solid #ec6104;
+}
+
+.red-link{
+  background-color: #ec041b;
+  border:1px solid #ec041b;
+}
 
 @media only screen and (max-width: 580px) {
-.timer{
-    margin-top: 50%;
-    font-size: 220%;
-}
-
-.timer_text{
-  width: 90px;
-  margin-left: 12px;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-.button {
-   /* Green */
-  width: 120px;
-  padding: 10px 15px;
-  font-size: 15px;
-  margin: 4px 10px;
-}
-
-.link{
-  font-size: 15px;
-  font-weight: 400;
-  
-}
-
+  .link{
+    font-size: 15px;
+    font-weight: 400;
+  }
 }

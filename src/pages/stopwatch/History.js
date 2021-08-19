@@ -36,7 +36,7 @@ class History extends React.Component {
                 //returning the values will will get rendered on the app
                 return(
                         <div>
-                                <Link to="/Stopwatch" className="link">
+                                <Link to="/Stopwatch" className="link yellow-link">
                                 Stopwatch
                                 </Link>
                                 <p className="timer-history">{timeHistory}</p>

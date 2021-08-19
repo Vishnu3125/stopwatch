@@ -3,8 +3,11 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //importing all the components 
-import Stopwatch from './Stopwatch';
-import History from './History';
+import Stopwatch from './pages/stopwatch/Stopwatch';
+import History from './pages/stopwatch/History';
+import Clock from './pages/clock/Clock'
+import Calculator from './pages/calculator/Calculator'
+import Convert from './pages/money/Convert'
 import Navigator from './Navigator';
 
 // _______________________IMPORTANT_____________________
@@ -25,6 +28,9 @@ class App extends Component {
             {/* giving paths to the component */}
             <Route path="/Stopwatch" exact component={() => <Stopwatch />} />
             <Route path="/History" exact component={() => <History />} />
+            <Route path="/Clock" exact component={() => <Clock />} />
+            <Route path="/Calculator" exact component={() => <Calculator />} />
+            <Route path="/Convert" exact component={() => <Convert />} />
             <Navigator></Navigator>
           </Switch>
         </Router>

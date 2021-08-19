@@ -1,4 +1,4 @@
-import './App.css';
+import './Stopwatch.css';
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 
@@ -108,8 +108,8 @@ class Stopwatch extends Component {
     render() {
       return (
         <div className = "App">
-        <Link to="/History" className="link">
-        View History
+        <Link to="/" className="link yellow-link" style={{margin:"2%"}}>
+        Home
         </Link>
 
         {/* rendering all the values */}
@@ -120,9 +120,15 @@ class Stopwatch extends Component {
         </p>
 
         {/* calling all the buttons start stop and reset */}
-        <button onMouseDown={this.handleClickStart} className = "button">{this.state.start}</button>
-        <button onMouseDown={this.handleClickStop} className = "button">Stop</button>
-        <button onClick={this.handleClickReset} className = "button">Reset</button>
+        <button onMouseDown={this.handleClickStart} className = "timer-button">{this.state.start}</button>
+        <button onMouseDown={this.handleClickStop} className = "timer-button">Stop</button>
+        <button onClick={this.handleClickReset} className = "timer-button">Reset</button>
+
+        <div style={{margin:"4%"}}>
+        <Link to="/History" className="link yellow-link">
+        View History
+        </Link>
+        </div>
         </div>
       )
     }
